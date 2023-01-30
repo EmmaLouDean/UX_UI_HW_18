@@ -1,9 +1,20 @@
+/***HW 17***/
+
 /*general styles*/
+img{
+    object-fit:contain;
+}
 html,body{
     font-family:Poppins;
     margin:0;
     line-height:1.6;
     overflow-x:hidden;
+}
+h1{
+    font-size:52px;
+    font-weight:400;
+    text-decoration:underline;
+    margin:0;
 }
 h3{
     font-family:Playfair Display;
@@ -29,6 +40,10 @@ ul{
 }*/
 #nav-list{
     font-size:30px;
+    cursor:pointer;
+}
+#nav-list li:hover{
+    color:#C669BC;
 }
 .main{
     display:flex;
@@ -51,7 +66,7 @@ header{
     flex-direction:column;
     height:100%;
 }
-.logo{
+.main-logo{
     height:60px;
     margin-left:80px;
     margin-top:25px;
@@ -173,22 +188,128 @@ p{
         font-size:30px;
         color:white;
         align-self:flex-end;
+        cursor:pointer;
     }
 
     #nav-list{
         display:none;
         margin:0px;
+        
+        
     }
     #nav-list.show{
         display:block;
+        width:100%;
+        background-color:#569793;
+        color:white;
+        min-height:100vh;
+        text-align:center;
+        line-height:300%;
+        padding-left:0;
+        padding-top:20vh;
+        cursor:pointer;
+        
     }
 
-    .logo{
+    .main-logo{
         display:none;
     }
 
     nav{
         display:flex;
         flex-direction:column-reverse;
+    
     }
+    
+    
+}
+
+
+/***HW 18***/
+
+/*subsection-2 style*/
+.project-card{
+    border: 1px solid black;
+}
+.hero{
+    background-color:#569793;
+}
+.hero p, h1{
+    color:white;
+    margin-left:80px;
+}
+
+/*main-2 style*/
+.information{
+    display:flex;
+    flex-direction:column;
+   
+}
+.headshot-container{
+    display:flex;
+    align-items:center;
+}
+.headshot{
+    margin-left:80px;
+}
+.hero{
+    display:flex;
+    justify-content:space-around;
+    height:100%;
+    padding:80px;
+}
+
+/*subsection-2 style*/
+.Heading{
+    color:black;
+    font-size:40px;
+    font-family:Playfair Display;
+}
+.project-container{
+    margin:80px;
+
+}
+.project-card{
+    display:flex;
+    justify-content:space-around;
+    align-items:center;
+    padding:25px;
+    border-radius:30px;
+    box-shadow: 5px 5px 20px rgb(197, 195, 195);
+    font-family:Playfair Display;
+}
+.info{
+    display:flex;
+    flex-direction:column;
+    align-items:left;
+    
+}
+.logo{
+    align-self:center;
+
+}
+.mockup{
+    height:300px;
+}
+.view-more{
+    cursor:pointer;
+    background-color:white;
+    height:40px;
+    width:140px;
+    font-family:Playfair Display;
+    font-weight:bold;
+}
+.view-more:hover{
+    background-color:black;
+    color:white;
+    transition:0.5s;
+}
+
+
+
+
+
+/**Media Query for Column View**/
+@media only screen and (max-width:600){
+
 }
