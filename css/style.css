@@ -1,6 +1,13 @@
 /***HW 17***/
 
 /*general styles*/
+a{
+    text-decoration:none;
+    color:white;
+}
+a:hover{
+    color:#C669BC;
+}
 img{
     object-fit:contain;
 }
@@ -71,6 +78,7 @@ header{
     margin-left:80px;
     margin-top:25px;
     margin-bottom:25px;
+    cursor:pointer;
 }
 .Hand-Emoji{
     margin-left:80px;
